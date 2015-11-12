@@ -15,6 +15,6 @@ Languages Utilized: HTML, CSS, CSS Bootstrap 3, and Javascript
     ISDS 3100 & 3107 
     MATH 1550, 1552, & 2057
 # Resume
-    bit.ly/20NiIdJ
+    bit.ly/trbresume
 # Contact
     https://about.me/trever_berryman
