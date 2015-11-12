@@ -6,7 +6,7 @@ Languages Utilized: HTML, CSS, CSS Bootstrap 3, and Javascript
 #
 #
 # About 
-    # https://about.me/trever_berryman
+    https://about.me/trever_berryman
 # Courses & Projects
     CSC 1350 & 1351
     CSC 1352
@@ -15,6 +15,6 @@ Languages Utilized: HTML, CSS, CSS Bootstrap 3, and Javascript
     ISDS 3100 & 3107 
     MATH 1550, 1552, & 2057
 # Resume
-    # bit.ly/20NiIdJ
+    bit.ly/20NiIdJ
 # Contact
-    # https://about.me/trever_berryman
+    https://about.me/trever_berryman
