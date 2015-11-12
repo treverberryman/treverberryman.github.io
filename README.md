@@ -7,7 +7,7 @@
 #
 # About 
     https://about.me/trever_berryman
-# Courses & Projects
+# Courses / Projects
     CSC 1350 & 1351
     CSC 4356
     ENGL 2000 & 2300
