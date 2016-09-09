@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>trb~web</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://trbweb.wordpress.com/xmlrpc.php">
+
+<script type="text/javascript">
+  WebFontConfig = {"google":{"families":["Anonymous+Pro:r:latin,latin-ext","Anonymous+Pro:r,i,b,bi:latin,latin-ext"]}};
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://s1.wp.com/wp-content/plugins/custom-fonts/js/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+	})();
+</script><style id="jetpack-custom-fonts-css">.wf-active body, .wf-active button, .wf-active input, .wf-active select, .wf-active textarea{font-family:"Anonymous Pro",monospace}.wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6{font-family:"Anonymous Pro",monospace;font-weight:400;font-style:normal}.wf-active h1{font-size:1.6331em;font-style:normal;font-weight:400}.wf-active h2{font-size:1.1669em;font-style:normal;font-weight:400}.wf-active h3{font-size:0.9331em;font-style:normal;font-weight:400}.wf-active h4{font-size:0.777em;font-style:normal;font-weight:400}.wf-active h5{font-size:0.7em;font-style:normal;font-weight:400}.wf-active h6{font-size:0.5446em;font-style:normal;font-weight:400}.wf-active .widget-title{font-size:0.9331em;font-weight:400;font-style:normal}.wf-active .site-title{font-size:1.1669em;font-style:normal;font-weight:400}.wf-active .site-description{font-size:0.5446em;font-weight:400;font-style:normal}.wf-active .entry-title, .wf-active .page-title{font-size:1.1669em;font-style:normal;font-weight:400}.wf-active .page-title{font-size:0.777em;font-style:normal;font-weight:400}.wf-active .error404 .site-title, .wf-active .search-no-results .site-title, .wf-active .single .site-title{font-size:0.777em;font-style:normal;font-weight:400}.wf-active .single .entry-title{font-size:1.1669em;font-style:normal;font-weight:400}.wf-active .comment-reply-title, .wf-active .comments-title{font-size:1.1669em;font-style:normal;font-weight:400}@media screen and (min-width: 768px){.wf-active h1{font-size:3.108em;font-style:normal;font-weight:400}}@media screen and (min-width: 768px){.wf-active h2{font-size:1.1669em;font-style:normal;font-weight:400}}@media screen and (min-width: 768px){.wf-active h3{font-size:0.9331em;font-style:normal;font-weight:400}}@media screen and (min-width: 768px){.wf-active h4{font-size:0.777em;font-style:normal;font-weight:400}}@media screen and (min-width: 768px){.wf-active h5{font-size:0.7em;font-style:normal;font-weight:400}}@media screen and (min-width: 768px){.wf-active h6{font-size:0.5446em;font-style:normal;font-weight:400}}@media screen and (min-width: 768px){.wf-active .site-title{font-size:1.6331em;font-style:normal;font-weight:400}}@media screen and (min-width: 768px){.wf-active .site-description{font-size:0.9331em;font-style:normal;font-weight:400}}@media screen and (min-width: 768px){.wf-active .entry-title{font-size:1.6331em;font-style:normal;font-weight:400}}@media screen and (min-width: 768px){.wf-active .page-title{font-size:1.6331em;font-style:normal;font-weight:400}}@media screen and (min-width: 768px){.wf-active .single .entry-title{font-size:1.6331em;font-style:normal;font-weight:400}}@media screen and (min-width: 1060px){.wf-active h1{font-size:3.885em;font-style:normal;font-weight:400}}@media screen and (min-width: 1060px){.wf-active h2{font-size:1.6331em;font-style:normal;font-weight:400}}@media screen and (min-width: 1060px){.wf-active h3{font-size:1.1669em;font-style:normal;font-weight:400}}@media screen and (min-width: 1060px){.wf-active h4{font-size:0.777em;font-style:normal;font-weight:400}}@media screen and (min-width: 1060px){.wf-active .site-title{font-size:3.885em;font-style:normal;font-weight:400}}@media screen and (min-width: 1060px){.wf-active .site-description{font-size:1.1669em;font-style:normal;font-weight:400}}@media screen and (min-width: 1060px){.wf-active .error404 .site-title, .wf-active .search-no-results .site-title, .wf-active .single .site-title{font-size:1.1669em;font-style:normal;font-weight:400}}@media screen and (min-width: 1060px){.wf-active .single .entry-title{font-size:3.108em;font-style:normal;font-weight:400}}</style>
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="trb~web &raquo; Feed" href="https://trbweb.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="trb~web &raquo; Comments Feed" href="https://trbweb.wordpress.com/comments/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s1.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1473172720h&ver=4.6.1-RC1-38499"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='all-css-0' href='https://s0.wp.com/_static/??-eJyFUdFuwyAM/KFR1m5anqZ9CxAvcYMBYWjWv5/TbJHWRuwlso873+mi56RcDAVC0VRV8nXAwHpOLpJiQg/Xu+3gmJ/0voyrZZcxFYyyfUbv49zij/ECWdlqrQdRl6uHjY7B+doLLIDuDY8oB/hAGB4pZ9ZF3icbv7ah5etxWlRQknGTum0tuunFVVmTf5rY9lWEOsRyS7cNrWsuZhCckikLg6BHAx5IaC0Zpbdf1TKOkrxps0a1NmVgVvIlrKTKKEb/xKMlytrKrfw/yIN0vahTtRoFyYPxxkkLd79zx2mAAHntbXdctB/0fnztXo7dqTs9n78Bf2ECpg==' type='text/css' media='all' />
+<link rel='stylesheet' id='intergalactic-lato-css'  href='https://fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%26subset%3Dlatin%2Clatin-ext&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-2' href='https://s0.wp.com/_static/??-eJx9jcEOwjAIQH9IJDMz6sH4LV3HKqYtTWEu/r01XqaH3XjkPcClgJdslA3tTokUyzwgt00NLjpv7Bt5VHtFgqV4SXuvusNVmGYocQ6cFRceA5miimcXIdHIDriJ+r2w1Wax9t6NiTMMrsLzsGUHEojinbHkH4ApOq5baaUhSmhjwGatcCsyUahUpBpMUtM/f9Jbunb98dL351PXP94nHYGJ' type='text/css' media='all' />
+<link rel='stylesheet' id='print-css-3' href='https://s0.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1465851035h' type='text/css' media='print' />
+<link rel='stylesheet' id='all-css-4' href='https://s2.wp.com/_static/??-eJx9TssOwjAM+yFCVhjihPiWrCttUNtUTTd+n+0ACCF28kO2ZXwUsJKbyw3TBCVOnrMijYkzDFQxkTZXFwYyu1p5dPrx9lZ1h38mbGPJ68SbbcWLaINbJK6ogSpn/8KtloplihDFy7f4KbXg0nI99OijDBTXwDVdTH82nTmeDt39CSqqYz8=' type='text/css' media='all' />
+<script type='text/javascript' src='https://s0.wp.com/_static/??-eJx9kFEKwjAMQC9kV9Q59UM8y1azkdmmtUkdenr7MRFHFQIh5JHkRU9BIRmbLsB6zHFLEB9zqkZe6X+AcjjEVqBySG/YeBIg0S6pYNOAxJpTxyZiEPS56r21flrieXTwLA6Y2wEKXec7tKASQ8wASb6q9wXu2wDpjlBathAFCa25qgiMTyh5c/go/n7YTJ3daV03zW6zPe4P4wtJVYVE'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://trbweb.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress.com" />
+<link rel="canonical" href="https://trbweb.wordpress.com/" />
+<link rel='shortlink' href='http://wp.me/P6WDkT-3o' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=https%3A%2F%2Ftrbweb.wordpress.com%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=https%3A%2F%2Ftrbweb.wordpress.com%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="trb~web" />
+<meta property="og:url" content="https://trbweb.wordpress.com/" />
+<meta property="og:site_name" content="trb~web" />
+<meta property="og:image" content="https://trbweb.files.wordpress.com/2016/09/12909423_10156744039560717_3351224684948538318_o.jpg" />
+<meta property="og:image:secure_url" content="https://trbweb.files.wordpress.com/2016/09/12909423_10156744039560717_3351224684948538318_o.jpg" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:site" content="@@TreverBerryman" />
+<meta name="twitter:image" content="https://trbweb.files.wordpress.com/2016/09/12909423_10156744039560717_3351224684948538318_o.jpg?w=1400" />
+<meta name="twitter:card" content="photo" />
+<meta name="twitter:creator" content="@@TreverBerryman" />
+<meta name="twitter:description" content="Photo post by @@TreverBerryman." />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<link rel="shortcut icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48" />
+<link rel="icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48" />
+<link rel="apple-touch-icon-precomposed" href="https://s0.wp.com/i/webclip.png" />
+<link rel='openid.server' href='https://trbweb.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='https://trbweb.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://trbweb.wordpress.com/osd.xml" title="trb~web" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="trb~web" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Author posts, manage comments, and manage trb~web." /><meta name="msapplication-task" content="name=Edit page;action-uri=https://wordpress.com/page/trbweb.wordpress.com/210;icon-uri=https://s0.wp.com/i/icons/page.ico" /><meta name="msapplication-task" content="name=Write a post;action-uri=https://wordpress.com/post/trbweb.wordpress.com;icon-uri=https://s2.wp.com/i/icons/post.ico" /><meta name="msapplication-task" content="name=Moderate comments;action-uri=https://trbweb.wordpress.com/wp-admin/edit-comments.php?comment_status=moderated;icon-uri=https://s0.wp.com/i/icons/comment.ico" /><meta name="msapplication-task" content="name=Upload new media;action-uri=https://trbweb.wordpress.com/wp-admin/media-new.php;icon-uri=https://s2.wp.com/i/icons/media.ico" /><meta name="msapplication-task" content="name=Blog stats;action-uri=https://trbweb.wordpress.com/wp-admin/index.php?page=stats;icon-uri=https://s1.wp.com/i/icons/stats.ico" /><meta name="title" content="Trever Berryman&#8217;s ePortfolio | trb~web on WordPress.com" />
+<meta name="description" content="Ahoy! I&#039;m Trever Berryman. Nice to meet you! Thanks for visiting my ePortfolio website. Take a look around!" />
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url('https://trbweb.files.wordpress.com/2015/11/rapture.jpg'); background-repeat: repeat; background-position: top center; background-attachment: scroll; }
+</style>
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css" media="screen">
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
+	}
+</style>
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+</head>
+
+<body class="home page page-id-210 page-template-default logged-in admin-bar no-customize-support custom-background mp6 customizer-styles-applied single-page widgets-hidden highlander-enabled highlander-light">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+				<div class="site-branding">
+			<h1 class="site-title"><a href="https://trbweb.wordpress.com/" rel="home">trb~web</a></h1>
+			<h2 class="site-description"></h2>
+		</div>
+
+		<button class="menu-toggle x">
+			<span class="lines"></span>
+			<span class="screen-reader-text">Primary Menu</span>
+		</button>
+		<div class="slide-menu">
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<div class="menu-main-container"><ul id="menu-main" class="menu"><li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-29"><a href="https://trbweb.wordpress.com/">Home</a></li>
+<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="https://trbweb.wordpress.com/about/">About</a></li>
+<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="https://trbweb.wordpress.com/resume/">My Résumé</a></li>
+<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="https://trbweb.wordpress.com/contact-me/">Contact Me</a></li>
+<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="https://trbweb.wordpress.com/projects_and_courses/">Projects &amp; Classes</a></li>
+</ul></div>			</nav><!-- #site-navigation -->
+
+			
+			
+<div id="secondary" class="widget-area" role="complementary">
+	<aside id="search-5" class="widget widget_search"><form role="search" method="get" class="search-form" action="https://trbweb.wordpress.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></aside><aside id="wpcom_social_media_icons_widget-3" class="widget widget_wpcom_social_media_icons_widget"><ul><li><a title="View trever.berryman&#8217;s profile on Facebook" href="https://www.facebook.com/trever.berryman/" class="genericon genericon-facebook" target="_blank"><span class="screen-reader-text">View trever.berryman&#8217;s profile on Facebook</span></a></li><li><a title="View @TreverBerryman&#8217;s profile on Twitter" href="https://twitter.com/@TreverBerryman/" class="genericon genericon-twitter" target="_blank"><span class="screen-reader-text">View @TreverBerryman&#8217;s profile on Twitter</span></a></li><li><a title="View treverberryman&#8217;s profile on LinkedIn" href="https://www.linkedin.com/in/treverberryman/" class="genericon genericon-linkedin" target="_blank"><span class="screen-reader-text">View treverberryman&#8217;s profile on LinkedIn</span></a></li><li><a title="View treverberryman&#8217;s profile on GitHub" href="https://github.com/treverberryman/" class="genericon genericon-github" target="_blank"><span class="screen-reader-text">View treverberryman&#8217;s profile on GitHub</span></a></li></ul></aside></div><!-- #secondary -->
+
+		</div>
+	</header><!-- #masthead -->
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-210" class="post-210 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Trever Berryman&#8217;s ePortfolio</h1>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p style="text-align:center;"><img class="alignnone size-medium wp-image-198" src="https://trbweb.files.wordpress.com/2016/09/12909423_10156744039560717_3351224684948538318_o.jpg?w=225&#038;h=300" alt="12909423_10156744039560717_3351224684948538318_o" width="225" height="300" /></p>
+<p style="text-align:center;"><span style="color:#ffffff;">Ahoy! I&#8217;m Trever Berryman. Nice to meet you! </span></p>
+<p style="text-align:center;"><span style="color:#ffffff;">Thanks for visiting my ePortfolio website.</span></p>
+<p style="text-align:center;"><span style="color:#ffffff;">Take a look around!</span></p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-210" class="share-google-plus-1 sd-button share-icon" href="https://trbweb.wordpress.com/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-210" class="share-twitter sd-button share-icon" href="https://trbweb.wordpress.com/?share=twitter" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-press-this"><a rel="nofollow" data-shared="" class="share-press-this sd-button share-icon" href="https://trbweb.wordpress.com/?share=press-this" target="_blank" title="Click to Press This!"><span>Press This</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-210" class="share-facebook sd-button share-icon" href="https://trbweb.wordpress.com/?share=facebook" target="_blank" title="Share on Facebook"><span>Facebook</span></a></li><li class="share-end"></li></ul></div></div></div></div>			</div><!-- .entry-content -->
+	<footer class="entry-footer">
+		<span class="edit-link"><a class="post-edit-link" href="https://wordpress.com/page/trbweb.wordpress.com/210">Edit</a></span>	</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+				
+			
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+			<a href="https://wordpress.com/?ref=footer_website">Create a free website or blog at WordPress.com.</a>
+			
+					</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<!-- wpcom_wp_footer -->
+	<script type="text/javascript">
+	/* <![CDATA[ */
+		jQuery(document).ready( function($) {
+			function doFollowingHover() {
+				$('#wp-admin-bar-follow > a').unbind( '.unfollow' );
+
+				$('#wp-admin-bar-follow > a').bind( 'mouseover.unfollow', function() {
+
+					$(this).html( "Unfollow" ).parent( 'li' ).addClass( 'unfollow' );
+				});
+				$('#wp-admin-bar-follow > a').bind( 'mouseout.unfollow', function() {
+					$(this).html( "Following" ).parent( 'li' ).removeClass( 'unfollow' );
+				});
+			}
+							doFollowingHover();
+			
+			$('#wp-admin-bar-follow > a').click( function( e ) {
+				$('#wp-admin-bar-follow > a').unbind( '.unfollow' );
+
+				e.preventDefault();
+
+				var link = $( this ), li = $( '#wp-admin-bar-follow' ), timeout = 0;
+
+				if ( li.hasClass( 'subscribed' ) ) {
+					li.removeClass( 'subscribed' ).removeClass( 'unfollow' );
+					link.html( "Follow" );
+
+					$('body').append( $( 'div.wpcom-bubble' ).removeClass( 'fadein' ) ).off( 'click.bubble' );
+
+					var action = 'ab_unsubscribe_from_blog';
+				} else {
+					li.addClass( 'subscribed' ).removeClass( 'unfollow' );
+					link.html( "Following" );
+
+						var left = 131 - link.width();
+						li.append( $( 'div.wpcom-bubble' ).css( { left: '-' + left + 'px' } ) );
+						$( 'div.bubble-txt', 'div.wpcom-bubble' ).html( "New posts from this blog will now appear in <a target=\"_blank\" href=\"http:\/\/wordpress.com\/\">your reader<\/a>. You can manage email alerts from your <a target=\"_blank\" href=\"http:\/\/wordpress.com\/following\/edit\/\">subscriptions page<\/a>." );
+
+						$( 'div.wpcom-bubble.action-bubble' ).addClass( 'fadein' );
+
+						setTimeout( function() {
+							$('body').on( 'click.bubble touchstart.bubble', function(e) {
+								if ( !$(e.target).hasClass('wpcom-bubble') && !$(e.target).parents( 'div.wpcom-bubble' ).length )
+									hideBubble();
+							});
+							setTimeout( hideBubble, 15000 );
+						}, 500 );
+
+					var action = 'ab_subscribe_to_blog';
+					$('#wp-admin-bar-follow > a').bind( 'mouseout.shift', function() {
+						doFollowingHover();
+						$(this).unbind( '.shift' );
+					});
+				}
+
+				var nonce = link.attr( 'href' ).split( '_wpnonce=' );
+				nonce = nonce[1];
+
+				$.post( "https:\/\/trbweb.wordpress.com\/wp-admin\/admin-ajax.php", {
+					'action': action,
+					'_wpnonce': nonce,
+					'source': 'admin_bar',
+					'blog_id': 102632251				});
+			});
+		});
+	/* ]]> */
+	</script>
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201636y'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":"84d17e0574cc4e576c48f65d58606af3"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781h'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	</div>
+<div id="report-form-window" style="display:none;"></div>
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/trbweb.wordpress.com\/":210};
+	</script>
+		<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+		<script type='text/javascript'>
+/* <![CDATA[ */
+var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"https:\/\/s1.wp.com\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};
+var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"https:\/\/s1.wp.com\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var comment_like_text = {"loading":"Loading..."};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpNotesArgs = {"cacheBuster":"20160329","iframeUrl":"https:\/\/widgets.wp.com\/notificationsbeta\/","iframeAppend":"2","iframeScroll":"no","wide":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcom_tos_report_form = {"ajaxurl":"\/wp-admin\/admin-ajax.php","isLoggedoutUser":"","post_ID":"210","current_url":"https:\/\/trbweb.wordpress.com","report_this_content":"Report this content"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var actionbardata = {"siteID":"102632251","siteName":"trb~web","siteURL":"http:\/\/trbweb.wordpress.com","icon":"<img alt='' src='https:\/\/s1.wp.com\/i\/void.gif' class='avatar avatar-36' height='36' width='36' \/>","canManageOptions":"1","canCustomizeSite":"1","isFollowing":"1","themeSlug":"pub\/intergalactic","themeURL":"https:\/\/wordpress.com\/themes\/intergalactic\/","xhrURL":"https:\/\/trbweb.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"2cb92ceb04","isSingular":"1","isFolded":"","customizeLink":"https:\/\/trbweb.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Ftrbweb.wordpress.com%2F","postID":"210","shortlink":"http:\/\/wp.me\/P6WDkT-3o","canEditPost":"1","editLink":"https:\/\/wordpress.com\/page\/trbweb.wordpress.com\/210","i18n":{"view":"View Site","follow":"Follow","following":"Following","edit":"Edit","customize":"Customize","report":"Report this content","themeInfo":"Get theme: Intergalactic","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage Sites I Follow","viewReader":"View Site in the Reader"}};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s0.wp.com/_static/??-eJyVUkFywyAM/FAJjdsZnzp9C8aKLdsIisDJ8yumtZtkXLe5IFjtCrFCn4OynhJQ0gPrFma0EC6HgZ+0pJDslFvgkks92rHxl3WzkBa9yypMuUNiPeEooo8MGXpD7QRxq6JpHZJqTDxI3Km28iRvvVM/ut81wnMCqa9OhtJSo/mMAR4R3QD3wtSDE1rIjUZBYmcmYxPaIrwBHhHyiEGuo1GdvM2sTrg5jEwtRLY+wrV314zGlCERbHkraZc5GdvvuUE+wfeqihGe1Fz9yV+Hs09OnlWE4GOSh0Z3f/7Xb3CGxb1ylZ8hRiwvX7G9CmK2p1Jh3e2wg2fpaTIYNfcmInVLFNG7ezu+1i/Huqqr5+ET1iw8Jw=='></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>		<script>
+			var _comscore = _comscore || [];
+			_comscore.push({
+				c1: "2",
+				c2: "7518284"
+			});
+			(function() {
+				var s = document.createElement("script"),
+					el = document.getElementsByTagName("script")[0];
+				s.async = true;
+				s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+				el.parentNode.insertBefore(s, el);
+			})();
+		</script>
+		<noscript>
+			<p class="robots-nocontent"><img src="https://sb.scorecardresearch.com/p?c1=2&c2=7518284&c3=&c4=&c5=&c6=&c15=&cv=2.0&cj=1" alt="" style="display:none;" width="1" height="1" /></p>
+		</noscript><script src="//stats.wp.com/w.js?54" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['identifyUser', 97433302, 'trbweb']);
+_tkq.push(['storeContext', {'blog_id':'102632251','blog_tz':'0','user_lang':'en','blog_lang':'en'}]);
+_stq.push(['view', {'blog':'102632251','v':'wpcom','tz':'0','user':'1','user_id':'97433302','post':'210','subd':'trbweb'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1zNDZ8S252Wis9XUQyb3YrcUVIU2R0VH5TdXIyfFgyfjVBN0lIeEpROGxdTnl0NVVYdjNTZURNdE02OUdKNkUyY0E5bXUzSWdEL3dpVFJENmxTdl1LViVBMVU0Y1JOdnN8anwucyY4MiVGMCtZd1B5SXZHK3ZLazdEZmk3MHpuL0Y2dzFfeWgwQ0c4TXdMbzE1U0MtakVjdEFOZFo9NVJGLW5hJjdjYT9Tc2UtQXprVV1bamRmR1ZdW28sLkxhTEJ0LDZDbjAsSkl+Q29naWl4UFRIX1UlP35rOFdIb3Jtci49UGZxNWRjdW0vSWc1UFRsYkR+JXAlV3NTSD1l'}]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+		<div id="wpadminbar" class="nojq nojs ltr">
+							<a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">Skip to toolbar</a>
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+						<ul id="wp-admin-bar-root-default" class="ab-top-menu">
+			
+		<li id="wp-admin-bar-blog" class="menupop my-sites"><a class="ab-item"  aria-haspopup="true" href="https://wordpress.com/stats/trbweb.wordpress.com">My Site</a>			<div class="ab-sub-wrapper">		<ul id="wp-admin-bar-blog-default" class="ab-submenu">
+			
+		<li id="wp-admin-bar-blog-info" class="current-site">		<div class="ab-item ab-empty-item" ><div class="ab-site-icon"></div><span class="ab-site-title">trb~web</span><span class="ab-site-description">trbweb.wordpress.com</span></div>		</li>
+		<li id="wp-admin-bar-new-site"><a class="ab-item"  href="https://wordpress.com/start?ref=admin-bar-logged-in">+ Add New Site</a>		</li>
+		<li id="wp-admin-bar-view-site" class="mb-icon ab-sub-active"><a class="ab-item"  href="https://trbweb.wordpress.com/">View Site</a>		</li>
+		<li id="wp-admin-bar-blog-stats" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/stats/trbweb.wordpress.com">Stats <img style="width: 95px; margin: 0; float: right;" src="https://trbweb.wordpress.com/wp-includes/charts/admin-bar-hours-scale-2x.php?masterbar=1" alt="Stats" title="Showing site views per hour for the last 48 hours. Click for full Site Stats." /></a>		</li>
+		<li id="wp-admin-bar-plan" class="inline-action">		<div class="ab-item ab-empty-item" ><a href="https://wordpress.com/plans/trbweb.wordpress.com" class="ab-item ab-primary mb-icon" id="wp-admin-bar-plan">Plan</a><a href="https://wordpress.com/plans/trbweb.wordpress.com" class="ab-secondary" id="wp-admin-bar-plan-badge">Free</a></div>		</li>		</ul>
+			<ul id="wp-admin-bar-publish" class="ab-submenu">
+			
+		<li id="wp-admin-bar-publish-header" class="ab-submenu-header">		<div class="ab-item ab-empty-item" >Publish</div>		</li>
+		<li id="wp-admin-bar-new-post" class="inline-action">		<div class="ab-item ab-empty-item" ><a href="https://wordpress.com/posts/trbweb.wordpress.com" class="ab-item ab-primary mb-icon" id="wp-admin-bar-edit-post">Blog Posts</a><a href="https://wordpress.com/post/trbweb.wordpress.com" class="ab-secondary" id="wp-admin-bar-new-post">Add</a></div>		</li>
+		<li id="wp-admin-bar-new-page" class="inline-action">		<div class="ab-item ab-empty-item" ><a href="https://wordpress.com/pages/trbweb.wordpress.com" class="ab-item ab-primary mb-icon" id="wp-admin-bar-edit-page">Pages</a><a href="https://wordpress.com/page/trbweb.wordpress.com" class="ab-secondary" id="wp-admin-bar-new-page">Add</a></div>		</li>		</ul>
+			<ul id="wp-admin-bar-look-and-feel" class="ab-submenu">
+			
+		<li id="wp-admin-bar-look-and-feel-header" class="ab-submenu-header">		<div class="ab-item ab-empty-item" >Personalize</div>		</li>
+		<li id="wp-admin-bar-themes" class="inline-action">		<div class="ab-item ab-empty-item" ><a href="https://wordpress.com/design/trbweb.wordpress.com" class="ab-item ab-primary mb-icon" id="wp-admin-bar-themes">Themes</a><a href="https://trbweb.wordpress.com/wp-admin/customize.php?url=https%3A%2F%2Ftrbweb.wordpress.com%2F" class="ab-secondary" id="wp-admin-bar-cmz">Customize</a></div>		</li>
+		<li id="wp-admin-bar-menus" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/menus/trbweb.wordpress.com">Menus</a>		</li>		</ul>
+			<ul id="wp-admin-bar-configuration" class="ab-submenu">
+			
+		<li id="wp-admin-bar-configuration-header" class="ab-submenu-header">		<div class="ab-item ab-empty-item" >Configure</div>		</li>
+		<li id="wp-admin-bar-sharing" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/sharing/trbweb.wordpress.com">Sharing</a>		</li>
+		<li id="wp-admin-bar-users-toolbar" class="inline-action">		<div class="ab-item ab-empty-item" ><a href="https://wordpress.com/people/team/trbweb.wordpress.com" class="ab-item ab-primary mb-icon" id="wp-admin-bar-people">People</a><a href="https://trbweb.wordpress.com/wp-admin/users.php?page=wpcom-invite-users" class="ab-secondary" id="wp-admin-bar-people-add">Add</a></div>		</li>
+		<li id="wp-admin-bar-domains" class="inline-action">		<div class="ab-item ab-empty-item" ><a href="https://wordpress.com/domains/trbweb.wordpress.com" class="ab-item ab-primary mb-icon" id="wp-admin-bar-domains">Domains</a><a href="https://wordpress.com/domains/add/trbweb.wordpress.com" class="ab-secondary" id="wp-admin-bar-domains-add">Add</a></div>		</li>
+		<li id="wp-admin-bar-blog-settings" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/settings/general/trbweb.wordpress.com">Settings</a>		</li>		</ul>
+	</div>		</li>
+		<li id="wp-admin-bar-jumptotop-button-menu"><a class="ab-item"  href="#"><div id="jumptotop"><span class="noticon noticon-top"></span></div></a>		</li>
+		<li id="wp-admin-bar-newdash" class="menupop"><a class="ab-item"  aria-haspopup="true" href="https://wordpress.com/">Reader</a>			<div class="ab-sub-wrapper">		<ul id="wp-admin-bar-newdash-default" class="ab-submenu">
+			
+		<li id="wp-admin-bar-streams-header" class="ab-submenu-header">		<div class="ab-item ab-empty-item" >Streams</div>		</li>
+		<li id="wp-admin-bar-following" class="inline-action">		<div class="ab-item ab-empty-item" ><a href="https://wordpress.com/" class="ab-item ab-primary mb-icon" id="wp-admin-bar-followed-sites">Followed Sites</a><a href="https://wordpress.com/following/edit" class="ab-secondary" id="wp-admin-bar-reader-followed-sites-manage">Manage</a></div>		</li>
+		<li id="wp-admin-bar-discover-discover" class="mb-icon-spacer"><a class="ab-item"  href="https://wordpress.com/discover">Discover</a>		</li>
+		<li id="wp-admin-bar-discover-search" class="mb-icon-spacer"><a class="ab-item"  href="https://wordpress.com/read/search">Search</a>		</li>
+		<li id="wp-admin-bar-discover-recommended-blogs" class="mb-icon-spacer"><a class="ab-item"  href="https://wordpress.com/recommendations">Recommendations</a>		</li>
+		<li id="wp-admin-bar-my-activity-my-likes" class="mb-icon-spacer"><a class="ab-item"  href="https://wordpress.com/activities/likes">My Likes</a>		</li>		</ul>
+	</div>		</li>		</ul>
+			<ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+			
+		<li id="wp-admin-bar-notes" class="menupop">		<div class="ab-item ab-empty-item" ><span id="wpnt-notes-unread-count" class="wpnt-loading wpn-read"></span><span class="noticon noticon-bell"></span><span class="ab-text">Notifications</span></div><div id="wpnt-notes-panel2" style="display:none" lang="en" dir="ltr"><div class="wpnt-notes-panel-header"><span class="wpnt-notes-header"></span><span class="wpnt-notes-panel-link"></span></div></div>		</li>
+		<li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item"  aria-haspopup="true" href="https://wordpress.com/me/"><img alt='' src='https://2.gravatar.com/avatar/84d17e0574cc4e576c48f65d58606af3?s=32&#038;d=mm&#038;r=G' class='avatar avatar-32' height='32' width='32' /><span class="ab-text">Me</span></a>			<div class="ab-sub-wrapper">		<ul id="wp-admin-bar-user-actions" class="ab-submenu">
+			
+		<li id="wp-admin-bar-user-info" class="user-info user-info-item">		<div class="ab-item ab-empty-item" tabindex="-1"><img alt='' src='https://2.gravatar.com/avatar/84d17e0574cc4e576c48f65d58606af3?s=128&#038;d=mm&#038;r=G' class='avatar avatar-128' height='128' width='128' /><span class="display-name">trbweb</span><a class="username" href="http://gravatar.com/trbweb">@trbweb</a><form action="https://trbweb.wordpress.com/wp-login.php?action=logout&amp;redirect_to=https%3A%2F%2Fwordpress.com%2F%3Fapppromo&amp;_wpnonce=4fa13b742d" method="post"><button class="ab-sign-out" type="submit">Sign Out</button></form></div>		</li>
+		<li id="wp-admin-bar-profile-header" class="ab-submenu-header">		<div class="ab-item ab-empty-item" >Profile</div>		</li>
+		<li id="wp-admin-bar-my-profile" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/me">My Profile</a>		</li>
+		<li id="wp-admin-bar-account-settings" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/me/account">Account Settings</a>		</li>
+		<li id="wp-admin-bar-billing" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/me/billing">Billing History</a>		</li>
+		<li id="wp-admin-bar-security" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/me/security">Security</a>		</li>
+		<li id="wp-admin-bar-notifications" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/me/notifications">Notifications</a>		</li>
+		<li id="wp-admin-bar-special-header" class="ab-submenu-header">		<div class="ab-item ab-empty-item" >Special</div>		</li>
+		<li id="wp-admin-bar-get-apps" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/me/get-apps">Get Apps</a>		</li>
+		<li id="wp-admin-bar-next-steps" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/me/next">Next Steps</a>		</li>
+		<li id="wp-admin-bar-help" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/help">Help</a>		</li>		</ul>
+	</div>		</li>
+		<li id="wp-admin-bar-ab-new-post"><a class="ab-item"  href="https://wordpress.com/post/trbweb.wordpress.com"></a>		</li>		</ul>
+				</div>
+							<a class="screen-reader-shortcut" href="https://trbweb.wordpress.com/wp-login.php?action=logout&#038;_wpnonce=4fa13b742d">Log Out</a>
+					</div>
+
+	
+<script type="text/javascript">
+/* <![CDATA[ */
+var clickDebugLink;
+
+jQuery(document).ready( function($) {
+	var single = false, w = 1000,
+		supe = false;
+
+	$(document.body).load(function(){ $('#wpadminbar img.grav-hashed').removeClass('grav-hashed'); }); // hack to hide the gravatar hovercard
+
+	if ( single && supe )
+		w = 1385;
+	else if ( supe )
+		w = 1200;
+
+	// debug bar extra
+	clickDebugLink = function( parent_id, obj ) {
+
+		$('#'+parent_id).children('div').hide();
+
+		document.getElementById( obj.href.substr( obj.href.indexOf( '#' ) + 1 ) ).style.display = 'block';
+		$( obj.href.substr( obj.href.indexOf( '#' ) ) ).show()
+
+		$(obj).parent().addClass('current').siblings('li').removeClass('current');
+
+		return false;
+	};
+
+	$( '#wpadminbar #wp-admin-bar-shortlink' ).click( function() {
+		$( '#adminbar-shortlink-input' ).select();
+	});
+
+	// skip tap-to-hover on site switcher for mobile
+	if ( 'ontouchstart' in window ) {
+		$('#wp-admin-bar-switch-site').on( 'touchstart', function( event ) {
+			if ( $( window ).width() > 782 ) {
+				return;
+			}
+			event.stopPropagation();
+			$( event.target ).first( 'a' ).click();
+		});
+	}
+
+});
+/* ]]> */
+</script>
+	<div class="wpcom-bubble action-bubble">
+		<div class="bubble-txt"></div>
+	</div>
+	<script type="text/javascript">function hideBubble() { jQuery('body').append( jQuery( 'div.wpcom-bubble' ).removeClass( 'fadein' ) ).off( 'click.bubble touchstart.bubble' ); jQuery(document).off( 'scroll.bubble' ); };</script>
+		<script type="text/javascript">
+	jQuery( '#wp-admin-bar-jumptotop-button-menu a' ).click( function( e ) {
+		e.preventDefault();
+		jQuery( 'html, body' ).animate( { scrollTop: 0 }, 'fast' );
+	} );
+	function hideShowTbJumpToTop() {
+		var total_width = 0;
+		// Calculate total width taken by items minus our button to see if it'll
+		// overlap with other toolbar menus.
+		jQuery( '#wp-admin-bar-root-default > li' ).each( function() {
+			var self = jQuery( this );
+			if ( 'wp-admin-bar-jumptotop-button-menu' != self.attr( 'id' ) )
+				total_width += self.width();
+		});
+		if ( jQuery( '#wp-admin-bar-jumptotop-button-menu' ).position()['left'] - total_width < 10 ) {
+			jQuery( '#jumptotop' ).animate( { 'top': '-50px' }, 'fast' );
+		} else if (  jQuery( window ).scrollTop() >= 350 && parseInt( jQuery( '#jumptotop' ).css( 'top' ) ) < 0 ) {
+			if ( jQuery( '#wp-admin-bar-jumptotop-button-menu' ).position()['left'] - total_width < 10 )
+			   return;
+			jQuery( '#jumptotop' ).animate( { 'top': 0 }, 'fast' );
+		} else if (  jQuery( window ).scrollTop() < 1 && parseInt( jQuery( '#jumptotop' ).css( 'top' ) ) >= 0 ) {
+			jQuery( '#jumptotop' ).animate( { 'top': '-50px' }, 'fast' );
+		}
+	}
+	// handle on page load if auto scrolling to a position
+	hideShowTbJumpToTop();
+	// bind to scrolll event
+	var jumpToTopTimer = null;
+	jQuery( window ).scroll( function() {
+		clearTimeout( jumpToTopTimer );
+		jumpToTopTimer = setTimeout( jumpToTopRefresh, 150 );
+	} );
+	var jumpToTopRefresh = function() {
+		hideShowTbJumpToTop();
+	};
+	</script>
+	<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+</body>
+</html>
