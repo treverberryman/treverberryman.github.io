@@ -538,6 +538,64 @@ if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
 	
 }
 </script>
+<style>
+.lines {
+    position: relative;
+    top: -7px;
+
+    display: inline-block;
+
+    width: 24px;
+    height: 4px;
+
+    transition: .3s;
+
+    background: #ffffff;
+}
+.lines:before,
+.lines:after {
+    position: absolute;
+    left: 0;
+
+    display: inline-block;
+
+    width: 24px;
+    height: 4px;
+
+    content: '';
+    transition: .3s;
+    -webkit-transform-origin: 1.71429px center;
+            transform-origin: 1.71429px center;
+
+    background: #ffffff;
+}
+.lines:before {
+    top: 8px;
+}
+.lines:after {
+    top: -8px;
+}
+
+.menu-toggle.toggle-on {
+    -webkit-transform: scale3d(.8, .8, .8);
+            transform: scale3d(.8, .8, .8);
+}
+
+.menu-toggle.x.toggle-on .lines {
+    background: transparent;
+}
+.menu-toggle.x.toggle-on .lines:before,
+.menu-toggle.x.toggle-on .lines:after {
+    top: 0;
+
+    width: 24px;
+
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+
+    background: #ffffff;
+}
+</style>
 </body>
 
 <!-- Mirrored from trbweb.wordpress.com/projects_and_courses/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Dec 2016 16:13:16 GMT -->
