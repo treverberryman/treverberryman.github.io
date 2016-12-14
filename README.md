@@ -1,5 +1,5 @@
 # treverberryman.github.io
-    Personal Website
+    Personal ePortfolio Website mirrored from Wordpress with custom edits
     
     About Me:
     https://about.me/trever_berryman
