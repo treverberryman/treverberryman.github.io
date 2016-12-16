@@ -1529,7 +1529,7 @@ a:active {
 
     transition: .3s;
 
-    background: #ffffff;
+    background: #E7C251;
 }
 .lines:before,
 .lines:after {
@@ -1546,7 +1546,7 @@ a:active {
     -webkit-transform-origin: 1.71429px center;
             transform-origin: 1.71429px center;
 
-    background: #ffffff;
+    background: #E7C251;
 }
 .lines:before {
     top: 8px;
@@ -1572,7 +1572,7 @@ a:active {
     -webkit-transform-origin: 50% 50%;
             transform-origin: 50% 50%;
 
-    background: #ffffff;
+    background: #E7C251;
 }
 .menu-toggle.x.toggle-on .lines:before {
     -webkit-transform: rotate3d(0, 0, 1, 45deg);
