@@ -2046,6 +2046,7 @@ a:active {
     margin: 2.75em auto .25em;
     padding: 0 .75em;
     text-align: center;
+    color: #E7C251;
 }
 .site-title a {
 	color: #E7C251;
@@ -2407,7 +2408,7 @@ a.more-link:focus {
 .single .site-title a,
 .error404 .site-title a,
 .search-no-results .site-title a {
-    color: rgba(255, 255, 255, .7);
+    color: color: #E7C251;
 }
 .single .site-title a:hover,
 .error404 .site-title a:hover,
