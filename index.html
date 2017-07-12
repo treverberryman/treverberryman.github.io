@@ -368,9 +368,9 @@ body.custom-background { background-image: url('https://trbweb.files.wordpress.c
 
 </p><br>
 
-<div class="center-div">
+<div class="container">
 
-<div id="cd17"></div>
+<div class="ethereum-button" id="cd17"></div>
 <script>
   !function(c){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.onload=c,t.src="//lab.subinsb.com/projects/francium/cryptodonate/widget.js";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}(function(){
     Fr.loadCD("cd17", {
@@ -382,7 +382,7 @@ body.custom-background { background-image: url('https://trbweb.files.wordpress.c
   });
 </script>
 
-<div id="cd558"></div>
+<div class="bitcoin-button" id="cd558"></div>
 <script>
   !function(c){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.onload=c,t.src="//lab.subinsb.com/projects/francium/cryptodonate/widget.js";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}(function(){
     Fr.loadCD("cd558", {
@@ -395,12 +395,20 @@ body.custom-background { background-image: url('https://trbweb.files.wordpress.c
 </script>
 
 <style type="text/css">
-	.center-div {
-		margin: 0 auto;
-		width: 268px;
-		height: 44px;
-		border-radius: 3px;
-}
+	
+	.container {
+		position: relative;
+    	width: 500px;
+    	overflow: hidden;
+	}
+
+	.ethereum-button, .bitcoin-button {
+	    position: relative;
+	    width: 50%;
+	    height: 100px;
+	    float: left; /*To get them next to each other if all else fails*/
+	}
+
 </style>
 
 </div>
