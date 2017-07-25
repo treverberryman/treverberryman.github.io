@@ -4,6 +4,10 @@
 <!-- Mirrored from trbweb.wordpress.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Dec 2016 16:12:38 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
+<link href="http://vjs.zencdn.net/6.2.0/video-js.css" rel="stylesheet">
+
+  <!-- If you'd like to support IE8 -->
+ <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="og:image" content="/images/thumbnail-meta.png" />
@@ -297,7 +301,19 @@ body.custom-background { background-image: url('https://trbweb.files.wordpress.c
 			<a class="imageLink" href="http://www.chimericalcollective.com/ixs-odyssey.html" title="VR Sci-Fi Horror Survival Game">
 				<img class="icon" src="/images/ixs-odyssey-website.png"></a>
 			<br>
-			<div style="text-align: center"><iframe width="560" height="315" src="https://www.youtube.com/embed/QESaK2cp2fs" frameborder="0" allowfullscreen></iframe></div>
+			<video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+  				poster="/images/video_poster_ixs_odyssey.png" data-setup="{}">
+    			<source src="/videos/IXS Odyssey - Chimerical Collective.mp4" type='video/mp4'>
+    			<source src="/videos/IXS_Odyssey_-_Chimerical_Collective.webm" type='video/webm'>
+				<p class="vjs-no-js">
+  					To view this video please enable JavaScript, and consider upgrading to a web browser that
+  					<a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+				</p>
+  			</video>
+
+  <script src="http://vjs.zencdn.net/6.2.0/video.js"></script>			
+
+			<!-- <div style="text-align: center"><iframe width="560" height="315" src="https://www.youtube.com/embed/QESaK2cp2fs" frameborder="0" allowfullscreen></iframe></div> -->
 		</p>
 		<p style="color:#E7C251;">This is a VR space-themed sci-fi survival horror game that's currently in development at <a href="http://www.chimericalcollective.com/">Chimerical Collective</a>.<br><br> My role is principal designer. You find yourself waking up in a cryotube after a long sleep. You are the captain of a science bio-research vessel. You were in the cryotube because of an injury sustained during the last mission. Your personal robotic assistant is waiting for you when you wake up. You find that there was a security override that kicked in and brought you out of stasis. Immediately you hear someone over your comm system trying to contact someone. What the Captain Blake doesn’t know is that a mysterious monster lurks in the depths of the ship. Along the way you discover supplies, survivors, and learn more about the person deep in the ship calling out for help.</p>
 		<br>
