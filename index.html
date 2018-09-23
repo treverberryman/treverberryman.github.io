@@ -263,7 +263,8 @@ body.custom-background { background-image: url('https://trbweb.files.wordpress.c
 </p>
 <p style="text-align:center;">
 	<section class="press" style="text-align:center;">
-    	<button><a style="color:#E7C251;text-decoration:none;display:block;" href="#projects">View Projects</a></button>
+    	<input type="button" onClick="document.getElementById('projects').scrollIntoView();" />
+    	<button><a style="color:#E7C251;" href="#projects">View Projects</a></button>
 	</section>
 </p>
 <p style="text-align:justify; font-size: ~"calc(16px + (24-16) * (100vw -400px) / (800-400))";">
@@ -544,7 +545,7 @@ This game won <a href="https://www.facebook.com/photo.php?fbid=369515713423552&s
 }
 
 button {
-  display: block;
+  display: inline-block;
   margin: 0 10px 0 0;
   padding: 5px 25px;
   font-size: ~"calc(16px + (24-16) * (100vw -400px) / (800-400))";;
