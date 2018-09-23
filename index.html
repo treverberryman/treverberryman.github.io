@@ -263,7 +263,7 @@ body.custom-background { background-image: url('https://trbweb.files.wordpress.c
 </p>
 <p style="text-align:center;">
 	<section class="press" style="text-align:center;">
-    	<input type="button" onClick="document.getElementById('projects').scrollIntoView();" />
+    	<input type="button" class="projectButton" onClick="document.getElementById('projects').scrollIntoView();" />
     	<button><a style="color:#E7C251;" href="#projects">View Projects</a></button>
 	</section>
 </p>
@@ -544,7 +544,7 @@ This game won <a href="https://www.facebook.com/photo.php?fbid=369515713423552&s
     height: 100%;
 }
 
-button {
+.projectButton {
   display: inline-block;
   margin: 0 10px 0 0;
   padding: 5px 25px;
@@ -556,12 +556,12 @@ button {
   border-radius: 0;
 }
 
-button:focus {
+.projectButton:focus {
   outline: none
 }
 
 
-section.press button {
+section.press .projectButton {
   color: #E7C251;
   background-color: #222;
   border: none;
@@ -569,13 +569,13 @@ section.press button {
   box-shadow: 0 10px #27496d;
 }
 
-section.press button:hover,
-section.press button.hover {
+section.press .projectButton:hover,
+section.press .projectButton.hover {
   background-color: #417cb8
 }
 
-section.press button:active,
-section.press button.active {
+section.press .projectButton:active,
+section.press .projectButton.active {
   background-color: #417cb8;
   box-shadow: 0 5px #27496d;
   transform: translateY(5px);
