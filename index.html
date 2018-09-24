@@ -371,7 +371,7 @@ body.custom-background { background-image: url('/images/rapture.jpg'); backgroun
   			<script src="http://vjs.zencdn.net/6.2.0/video.js"></script> -->
 
   			<!-- ^^Responsive video?^^ -->
-			
+
 		</p>
 		<div style="width: 50%;
   margin: 0 auto;"><p style="color:#E7C251;text-align:left;font-size: ~"calc(16px + (24-16) * (100vw -400px) / (800-400))";">This is a VR space-themed sci-fi survival horror title that's actively in development at <a href="http://www.chimericalcollective.com/">Chimerical Collective</a>. I co-founded with Christopher McCardle.<br><br>• Helping with game design, level design, producing, developing, and managing.<br>
@@ -438,9 +438,13 @@ This game won <a href="https://www.facebook.com/photo.php?fbid=369515713423552&s
 
 <div class="projectItem"><p>
 	<h2 style="color:#E7C251;text-align:center;font-size: ~"calc(16px + (24-16) * (100vw -400px) / (800-400))";">Early User Experience (UX) Testing for IXS Odyssey</h2><br>
-		<div class="resp-container">
-	    	<iframe class="resp-iframe" gesture="media" src="https://docs.google.com/document/d/1w1uGD-PaKC1fO719AvCw1iS60P8V4Y29mSrL0hP6faM/pub?embedded=true" frameborder="0" allowfullscreen="true"></iframe>
-		</div>
+  <div id="Iframe-Liason-Sheet" class="iframe-border center-block-horiz">
+     <div class="responsive-wrapper responsive-wrapper-wxh-550x2000">
+       <iframe class="resp-iframe" gesture="media" src="https://docs.google.com/document/d/1w1uGD-PaKC1fO719AvCw1iS60P8V4Y29mSrL0hP6faM/pub?embedded=true" frameborder="0" allowfullscreen="true"></iframe>
+         <p style="font-size: 110%;"><em><strong>ERROR: </strong>An &#105;frame should be displayed here but your browser version does not support &#105;frames.</em> Please update your browser to its most recent version and try again.</p>
+       </iframe>
+     </div>
+   </div>
 		<br><br>
 		<div style="width: 50%;
   margin: 0 auto;"><p style="color:#E7C251;text-align:left;font-size: ~"calc(16px + (24-16) * (100vw -400px) / (800-400))";">• This observation sheet is one of the many early user experience tests I ran for IXS Odyssey.</p></div>
@@ -528,11 +532,45 @@ This game won <a href="https://www.facebook.com/photo.php?fbid=369515713423552&s
     overflow: hidden;
 }
 
-.resp-container {
+#Iframe-Liason-Sheet {
+  max-width: 550px;
+  max-height: 2000px;
+  overflow: hidden;
+}
+/* inner wrapper: make responsive */
+.responsive-wrapper {
+  position: relative;
+  height: 0;  /* gets height from padding-bottom setting */
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+}
+.responsive-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* padding-bottom = h/w as a % */
+.responsive-wrapper-wxh-550x2000 {
+  padding-bottom: 363.6364%;
+}
+.iframe-border {
+  border: 1px solid #000;
+}
+.center-block-horiz {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* .resp-container {
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
-}
+} */
 
 .resp-iframe {
     position: absolute;
@@ -783,7 +821,7 @@ var comment_like_text = {"loading":"Loading..."};
 /* ]]> */
 </script>
 
- 
+
 <script type='text/javascript'>
 /* <![CDATA[ */
 var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/trbweb.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"2472153c82","display_exif":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","comment_registration":"0","require_name_email":"1","login_url":"https:\/\/trbweb.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Ftrbweb.wordpress.com%2F","blog_id":"102632251","local_comments_commenting_as":"<fieldset><label for=\"email\">Email (Required)<\/label> <input type=\"text\" name=\"email\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-email-field\" \/><\/fieldset><fieldset><label for=\"author\">Name (Required)<\/label> <input type=\"text\" name=\"author\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-author-field\" \/><\/fieldset><fieldset><label for=\"url\">Website<\/label> <input type=\"text\" name=\"url\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-url-field\" \/><\/fieldset>","reblog":"Reblog","reblogged":"Reblogged","reblog_add_thoughts":"Add your thoughts here... (optional)","reblogging":"Reblogging...","post_reblog":"Post Reblog","stats_query_args":"blog=102632251&v=wpcom&tz=0&user_id=0&subd=trbweb","is_public":"1","reblog_enabled":""};
