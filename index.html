@@ -3,6 +3,8 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <link href="http://vjs.zencdn.net/6.2.0/video-js.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
 
 
 <!-- If you'd like to support IE8 -->
@@ -34,7 +36,22 @@ src="//c.statcounter.com/11288736/0/7f4b373a/1/" alt="web
 analytics"></a></div></noscript>
 <!-- End of StatCounter Code for Default Guide -->
 
+<script>
+var btn = $('#button');
 
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
 
 <script type="text/javascript">
   WebFontConfig = {"google":{"families":["Anonymous+Pro:r:latin,latin-ext","Anonymous+Pro:r,i,b,bi:latin,latin-ext"]}};
@@ -240,6 +257,8 @@ body.custom-background { background-image: url('/images/rapture.jpg'); backgroun
 	<div class="entry-content">
  -->
 <!-- Edit stuff here -->
+
+<a id="button"></a>
 
 <div class="projectItem" style="padding:12px;background-color:rgba(37, 56, 42, .75);line-height:1.4;width: calc(100vw - 90px);display: inline-block;">
 <div class="projectItem" style="width: calc(75vw - 90px);display: inline-block;">
@@ -522,6 +541,43 @@ This game won <a href="https://www.facebook.com/photo.php?fbid=369515713423552&s
   div.projectItem {
     font-size: 3.5vw;
   }
+}
+
+#button {
+  display: inline-block;
+  background-color: #E7C251;;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .graphics-iframe {
